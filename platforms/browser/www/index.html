@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <style>
+      .facebook-card .card-header {
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .facebook-card .facebook-avatar {
+        float: left;
+      }
+      .facebook-card .facebook-name {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .facebook-card .facebook-date {
+        margin-left: 44px;
+        font-size: 13px;
+        color: #8e8e93;
+      }
+      .facebook-card .card-footer {
+        background: #fafafa;
+      }
+      .facebook-card .card-footer a {
+        color: #81848b;
+        font-weight: 500;
+      }
+      .facebook-card .card-content img {
+        display: block;
+      }
+      .facebook-card .card-content-inner {
+        padding: 15px 10px;
+      }
+      .demo-card-header-pic .card-header {
+        height: 40vw;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="list-block">
+        <ul>
+          <li>
+            <a href="homepage.html" class="item-link item-content">
+              <div class="item-media"><i class="f7-icons">home</i></div>
+              <div class="item-inner">
+                <div class="item-title">Homepage</div>
+                <div class="item-after"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="aboutus.html" class="item-link item-content">
+              <div class="item-media"><i class="f7-icons">persons</i></div>
+              <div class="item-inner">
+                <div class="item-title">About Us</div>
+                <div class="item-after"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="toc.html" class="item-link item-content">
+              <div class="item-media"><i class="f7-icons">flag</i></div>
+              <div class="item-inner">
+                <div class="item-title">Term Of Conditions</div>
+                <div class="item-after"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="sitemap.html" class="item-link item-content">
+              <div class="item-media"><i class="f7-icons">compass</i></div>
+              <div class="item-inner">
+                <div class="item-title">Sitemap</div>
+                <div class="item-after"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="services.html" class="item-link item-content">
+              <div class="item-media"><i class="f7-icons">star</i></div>
+              <div class="item-inner">
+                <div class="item-title">Services</div>
+                <div class="item-after"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Primacare</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
